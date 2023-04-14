@@ -3,7 +3,7 @@ const app = express(); //app has all the properties of express
 const server = require("http").Server(app); //creting http server
 const io = require("socket.io")(server); //socket runs on this server
 const { ExpressPeerServer } = require("peer"); //WebRTC api for real time media communication
-const PORT = process.env.PORT || 8001; //port on which server runs
+const PORT = process.env.PORT || 3000; //port on which server runs
 
 const peerServer = ExpressPeerServer(server, {
   debug: true,
